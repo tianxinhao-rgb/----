@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    p {
+        color: aqua;
+    }
+    .one {
+        color: blue;
+    }
+    .size {
+        font-size: 30px;
+    }
+    #two{
+        color: darkred;
+    }
+    * {
+        background-color: chocolate;
+    }
+</style>
+</head>
+<body>
+    <!-- 总共四个基础选择器：标签选择器，类选择器，id选择器,通配符选择器 -->
+    <!-- 标签选择器：选中所有的标签这一类的 -->
+    <p>ppppppp</p>
+    <p class="one size">ooooooo</p>
+    <!--类选择器，用于解决标签选择器的一些毛病,可以有多个类，用空格隔开 -->
+    <!-- 此处不做过多讲解，与类选择器差不多但是只能一对一的给予，类似身份证-->
+    <p id="two">0000000</p>
+    <!-- 通配符标签找到所有标签，设置样式,标签样式多样，且很多，非常适合
+    * {
+        margin:0;
+        padding:0;
+
+    }
+    用于去除标签默认的margin和padding
+    -->
+</body>
+</html>

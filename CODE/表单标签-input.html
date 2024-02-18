@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单标签</title>
+</head>
+<body>
+<!-- 登录，注册，搜索的时候用 -->
+<!-- 写什么就显示什么 -->
+<!--placeholder 占位符。提示用户输入内容的文本 -->
+<form action="">
+文本框：<input type="text" placeholder="请输入用户名">
+<br>
+密码框：<input type="password" placeholder="请输入密码">
+<br>
+<!-- 属性名：name:分组。有相同name属性值的单选框为一组,一组中同时只有一个被选中 checked:默认选中 -->
+单选框：男生：<input type="radio" name="gender" checked> 女生：<input type="radio" name="gender">
+<br>
+多选框：<input type="checkbox">
+<br>
+<!-- multiple 多文件选择 -->
+文件选择：<input type="file" multiple>
+<br>
+<!--要想使用下面的，需要用到form标签将整个全都包裹起来-->
+提交按钮：<input type="submit" value="提交">
+<br>
+重置按钮：<input type="reset" value="重置">
+<br>
+普通按钮：<input type="button" value="普通按钮">
+<!-- value给按钮添加文字 -->
+</form>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!--rowspan 跨行合并（垂直合并）  colspan跨列合并（水平合并） 注意：不可一跨标签合并-->
+<!-- 上下合并，只保留最上面的，其余的删除 -->
+<!-- 左右合并，只保留最左边的，其余的删除 -->
+<table border="2" width="500" height="300">
+    <!-- caption 表格大标题 th 表头单元格 -->
+        <caption><strong>学生成绩单</strong></caption>
+        <tr>
+            <th>姓名</th>
+            <th>成绩</th>
+            <th>评语</th>
+        </tr>
+        <tr>
+            <td>小哥哥</td>
+            <td rowspan="2">100</td>
+            <td>小哥哥真帅气</td>
+        </tr>
+        <tr>
+            <td>小姐姐</td>
+            <td>小姐姐真漂亮</td>
+
+        </tr>
+        <tr>
+            <td>总结</td>
+            <td colspan="2">郎才女貌</td>
+        
+        </tr>
+        <!-- 要想显示格子，就要用到表格相关属性 -->
+        <!-- border边框宽度 width表格宽度 height表格高度 -->
+    </table>  
+</body>
+</html>
