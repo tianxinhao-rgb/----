@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        .news {
+            width: 500px;
+            height: 400px;
+            border: 1px solid #ccc;
+            margin: 50px auto;
+            padding:42px 30px 0;
+        }
+        .news h2 {
+            border-bottom: 1px solid #ccc;
+            /* 行高是一倍，就是字号的大小 */
+            /* height不设置，会随着line-height变化自动变化 */
+            line-height: 1;
+            padding-bottom: 9px;
+        }
+        /* 去掉链表的符号 */
+        ul {
+            list-style: none;
+        }
+        .news li {
+            height: 50px;
+            border-bottom: 1px dashed #ccc;
+            padding-left: 28px;
+            line-height: 50px;
+
+        }
+        .news a {
+            text-decoration: none;
+            color: #666;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="news">
+        <h2>最新文章/New Article</h2>
+        <ul>
+            <li><a href="">北京招聘网页设计，平面设计，PHP</a></li>
+            <li><a href="">体验javascript的魅力</a></li>
+            <li><a href="">jQuery世界来临</a></li>
+            <li><a href="">网页设计师的梦想</a></li>
+            <li><a href="">jQuery中的链式编程是什么</a></li>
+        </ul>
+    </div>
+</body>
+</html>

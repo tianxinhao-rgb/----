@@ -6,25 +6,36 @@
     <title>Document</title>
     <style>
         div{
-            width: 2000px;
-            height: 30px;
-            background-color: white;
-            border-top:1px solid orange;
+            width:100%;
+            height:20px;
+            background-color:white;
+            border-top:2px solid orange;
+            border-bottom: 1px solid gray;
             padding: 10px;
-            border-bottom: 1px solid #edeef0;
         }
         a {
+            width: auto;
+            border: 1px solid cadetblue;
             text-decoration: none;
             color: black;
             display: inline-block;
-        }
-        a:hover{
-            color: orange;
+            text-align: center;
+            padding:0 44px;
             background-color: aqua;
+        }
+        a:hover {
+                color: brown;
+                background-color: darkgrey;
+
         }
     </style>
 <!-- 从内到外：先宽高背景色，放内存，调节内容位置；控制文字细节 -->
-
+<!-- line-height 和height的 区别 -->
+<!-- line-height的构成：
+        上间距
+        font-size
+        下间距
+-->
 </head>
 <body>
     <div>
