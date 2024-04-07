@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* img {
+            width: 150px;
+            height: 150px;
+            float: left;
+        } */
+       /* 浮动的优先级margin：0 auto 优于 */
+        .one {
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            float: left;
+            /* 盒子脱离，但是文字没有 */
+            margin-top:50px;
+            margin: 0 auto;
+
+        }
+        .two {
+            width: 200px;
+            height: 200px;
+            background-color: skyblue;
+            /* float: right; */
+            /* float:left  解决上次的间距问题*/
+            float: left;
+            /* 浮动标签：顶对齐 */
+            /* 浮动后的标签具备行内块的特点 */
+            /* 浮动的元素不能通过text-align:center 或者 margin：0 auto  */
+        }
+        .three {
+            width: 300px;
+            height: 300px;
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <!-- 图文环绕 -->
+    <!-- <img src="./伪元素.png" alt="">111111 -->
+    <!-- 网页布局 -->
+    <div class="one">one</div>
+    <div class="two">two</div>
+    <div class="three">three</div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Add User Information</title>  
+    <link rel="stylesheet" href="styles.css">  
+</head>  
+<body>  
+    <h1>Add User Information</h1>  
+    <div class="container">
+        <form id="userForm">  
+            <label for="username">用户:</label>  
+            <input type="text" id="username" name="username" required>  
+                <br>  
+            <label for="email">邮箱:</label>  
+            <input type="email" id="email" name="email" required>  
+                <br>  
+            <!-- <label for="password">密钥:</label>
+            <input type="password" id="password" name="password" required> -->
+                <br>
+            性别:
+            <label for="nan">男</label>
+            <input type="radio" id="nan" name="Sex"  checked required>
+            <label for="nv">女</label>
+            <input type="radio" id="nv" name="Sex" required>  
+                <br>
+            <label for="file_handful">病例文件</label>
+            <input type="file"id="file1" name="file_handful" multiple>
+                <br>  
+            <textarea rows="1" placeholder="补充信息"></textarea>
+            <br>
+            <button id="file" type="submit">Submit</button>  
+        </form>  
+            <div id="message"></div>  
+    </div>
+    <script src="script.js"></script>  
+</body>  
+</html>

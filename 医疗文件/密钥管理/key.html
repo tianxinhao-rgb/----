@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>密钥管理界面</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>密钥管理</h1>
+    <div class="key-list">
+      <div class="key-item">
+        <span class="key-name">密钥1</span>
+        <button class="delete-btn">删除</button>
+      </div>
+      <div class="key-item">
+        <span class="key-name">密钥2</span>
+        <button class="delete-btn">删除</button>
+      </div>
+      <!-- 添加更多的密钥项 -->
+    </div>
+    <form id="add-key-form">
+      <input type="text" id="key-name-input" placeholder="输入密钥名称">
+      <button type="submit">添加密钥</button>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

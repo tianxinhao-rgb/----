@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        /* img {
+            width: 150px;
+            height: 150px;
+            float: left;
+        } */
         div {
             width: 100px;
             height: 100px;
@@ -12,19 +17,20 @@
         }
         .one {
             background-color: pink;
+            float: left;
         }
         .two {
             background-color: skyblue;
+            float: right;
+            /* float:left  解决上次的间距问题*/
         }
     </style>
 </head>
 <body>
-    <!-- target:为了能够让块级标签在一行内显示 -->
+    <!-- 图文环绕 -->
+    <!-- <img src="./伪元素.png" alt="">111111 -->
+    <!-- 网页布局 -->
     <div class="one">one</div>
     <div class="two">two</div>
-    <!-- 行内块或者行内标签的代码在不同的一行，浏览器到时候会默认空格一行 -->
-    <!-- 解决方法：要么放在一行写，但是可看性差 -->
-    <!-- 因此，浮动孕育而生 -->
-    <!-- 早期作用：图文环绕   现在作用：网页布局 -->
 </body>
 </html>
