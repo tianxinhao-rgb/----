@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .top {
+            margin: 0 auto;
+            width: 1000px;
+            /* height: 300px; */
+            /* 问题的根源所在 */
+            background-color: pink;
+            overflow: hidden;
+        }
+        .bottom {
+            height: 100px;
+            background-color: green;
+        }
+        .left {
+            float: left;
+            width: 200px;
+            height: 300px;
+            background-color: #ccc;
+        }
+        .right {
+            float: right;
+            width: 790px;
+            height: 300px;
+            background-color: skyblue;
+        }
+        .clearfix {
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <!--方法一：给父级标签添加高度 -->
+    <!-- 方法二：额外标签法 在父级后面添加一个块级标签  clear:both-->
+    <div class="top">
+        <div class="left"></div>
+        <div class="right"></div>
+        <div class="clearfix"></div>
+        <!-- clearfix 清除浮动盒子的专用名 -->
+    </div>
+    <div class="bottom"></div>
+</body>
+</html>
