@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 对元素进行操作
+            // 1.操作元素的属性   语法 元素.属性名="" 赋值
+            // 2.操作元素的样式     语法 元素.style.样式名="" 原始样式名中的-符号要转换为驼峰式
+            // 3.操作元素的文本 
+            // 4.增删元素
+        function changAttribute(){
+           var in1= document.getElementById("in1");
+            // 语法 元素.属性名=""
+            // 获得属性值
+            console.log(in1.type)
+            console.log(in1.value)
+            // 修改属性值
+            in1.type="button"
+            in1.value="嗨"
+
+        }
+
+        function changStyle(){
+            var in1= document.getElementById("in1");
+            // 语法 元素.style.样式名="" 原始样式名中的-符号要转换为驼峰式
+            in1.style.color="green"
+            in1.style.borderRadius="5px"
+        }
+
+        function changText(){
+            var div01=document.getElementById("div01");
+            // 语法 元素名.innerText/innerHTML-->用于识别文本之中的标签代码
+            console.log(div01.innerText)
+            div01.innerText="hai"
+        }
+    </script>
+    <style>
+        #in1 {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+        <input type="text" value="hello" id="in1">
+        <div id="div01">hello</div>
+        <hr>
+        <button onclick="changAttribute()">操作属性</button>
+        <button onclick="changStyle()">操作样式</button>
+        <button onclick="changText()">操作文本</button>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // window对象是有浏览器提供我们使用的,无需自己创建
+        // 三种弹窗方式
+        // alter prompt 信息填写框confirm确认框
+        // 定时任务
+        //fuction fun4(){
+        //   windows.setTimeout(fuction(){
+        //          方法体
+        //},2000)
+        //                      执行函数，时间
+       // }
+       function fun4(){
+        var res=window.confirm("确定要删除吗？")
+        console.log(res)
+
+       }
+       function fun5(){
+            window.setTimeout(function(){
+                console.log("hello")
+            },2000)
+       }
+    </script>
+</head>
+<body>
+    <button onclick="fun4()">confirm确认框</button>
+    <button onclick="fun5()">两秒后向控制台打印hello</button>
+</body>
+</html>

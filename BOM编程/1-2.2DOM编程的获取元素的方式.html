@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 1.获得document dom树
+        // windows.document
+        // 从document中获取要的元素
+            // 1.直接获取 
+            // 2.间接获取 看截频图片
+        // 对元素进行操作
+            // 1.操作元素的属性 2.操作元素的样式 3.操作元素的文本 4.增删元素
+
+            function fun1(){
+              var ell=  window.document.getElementById("username")
+                // 根据元素id值获取页面上唯一的一个元素
+                console.log(ell)
+            }
+
+            function fun2(){
+                var els=window.document.getElementsByTagName(input)
+                for(var i=0;i<els.length;i++){
+                    console.log(els[i])
+                }
+            }
+
+            function fun3(){
+               var els= document.getElementsByName("aaa")
+               for(var i in els){
+                    console.log(els[i])
+               }
+            }
+            function fun4(){
+                    document.getElementsByClassName("a")
+            }
+    </script>
+</head>
+<body>
+    <div id="div01">
+        <input type="text" class="a"  name="aaa" id="username"/>
+        <input type="text" id="password" name="aaa"/>
+        <input type="text" id="email">
+        <input type="text" id="address"/>
+    </div>
+
+        <input type="text"/><br>
+        <input type="button" value="根据id获取指定元素" id="btn01" onclick="fun1()">
+        <input type="button" value="根据标签获得多个元素" id="btn02" onclick="fun2()">
+        <input type="button" value="根据name属性获取多个元素" id="btn03" onclick="fun3()">
+        <input type="button" value="根据class" id="btn04" onclick="fun4()">
+
+    
+</body>
+</html>

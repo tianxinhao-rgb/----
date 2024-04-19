@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css定位</title>
+    <style>
+        .innerDiv {
+            width: 100px;
+            height: 100px;
+            border: 1px solid blue;
+        }
+        .d1 {
+            background-color: greenyellow;
+            /* position:relative; */
+            /* 不释放文档流，即原来的位置不会被其他元素侵占 */
+            position:fixed;
+            /*  而释放文档流，且当鼠标往下拖拽时，div1随之移动，导航栏*/
+            top: 100px;
+            left: 100px;
+        }
+        .d2 {
+            background-color: rgb(210,119,119);
+        }
+        .d3 {
+            background-color: rgb(142,236,229);
+        }
+    </style>
+</head>
+<body>
+    <!-- position :默认值：static  fixed 相对,相对浏览器的窗口
+            relative 相对,相对元素原本的位置    absolute 绝对  
+        left right top  bottom 双方只用其中的一个-->
+    <div class="innerDiv d1">div1</div>
+    <div class="innerDiv d2">div2</div>
+    <div class="innerDiv d3">div3</div>
+</body>
+</html>

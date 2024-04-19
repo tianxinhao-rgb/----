@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <script>
+            function funA(){
+                //向后翻页
+                window.history.back()
+            }
+            function funB(){
+                // 向前翻页
+                window.history.forward()
+                // 向前翻m页，go(m)
+            }
+            function funC(){
+                location.href="http://www.atguigu.com"//修改地址栏，href属于locating的属性
+            }
+
+            function funD(){
+                
+                sessionStorage.setItem("KEYA","VALUEA")
+                localStorage.setItem("KEYB","VALUEB")
+
+            }
+
+            function funE(){
+                console.log(sessionStorage.getItem("KEYA"))
+                console.log(localStorage.getItem("KEYB"))
+
+            }
+            function funF(){
+                sessionStorage.removeItem("KEYA")
+                localStorage.removeItem("KEYB")
+            }
+
+        </script>
+
+</head>
+<body>
+    <!-- session   会话级存储，临时的（浏览器关闭数据清除）
+        localstorage  持久性存储 (浏览器关闭数据还在)-->
+        <button onclick="funD()">存储数据</button>
+        <button onclick="funE()">读取数据</button>
+        <button onclick="funF()">清空数据</button>
+    <hr>
+    <!-- location ：页面地址栏 -->
+    <button onclick="funC()">尚硅谷</button>
+    <hr>
+    <!-- history 窗口的访问历史 -->
+        <a href="./2.Bom对象的API调用.html">山鬼谷</a>
+    <button onclick="funA()">上一页</button>
+    <button onclick="funB()">下一页</button>
+</body>
+</html>
