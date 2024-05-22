@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- javascript 没有任何打印或者输出的函数。
+    在 HTML 中， JavaScript 通常用于操作 HTML 元素。
+    -->
+    <!-- 如需从 JavaScript 访问某个 HTML 元素，您可以使用 document.getElementById(id) 方法。 -->
+    
+    <p id="demo">我的第一个段落</p>
+    <script>
+        document.getElementById("demo").innerHTML = "段落已修改。";
+        // 写在body里面立马会在里面加载；
+   
+   
+    </script>
+    
+    <button onclick="myFunction()">点我</button>
+
+    <script>
+        function myFunction() {
+            document.write(Date());
+        }
+    </script>
+
+    <script>
+        a = 5;
+        b = 6;
+        c = a + b;
+        console.log(c);
+   </script>
+    <!-- document.getElementById("demo") 是使用 id 属性来查找 HTML 元素的 JavaScript 代码 。
+
+    innerHTML = "Paragraph changed." 是用于修改元素的 HTML 内容(innerHTML)的 JavaScript 代码。 -->
+
+    <!-- 请使用 document.write() 仅仅向文档输出写内容。
+
+    如果在文档已完成加载后执行 document.write，整个 HTML 页面将被覆盖。 -->
+
+</body>
+</html>

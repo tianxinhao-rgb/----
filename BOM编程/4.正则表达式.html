@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // // 验证
+        // // 定一个正则表达式
+        //  var reg=/o/
+        //  var str='hello world'
+        // //  校验是否符合正则规则
+        // console.log(reg.test(str))
+
+        // // 匹配 g 全局的意思
+        // var reg=/o/g
+        // var str='hello world'
+        // var result=str.match(reg)
+        // console.log(result)
+        
+        // // 替换  i是忽略大小写
+        // var reg =/o/gi
+        // var str='hello world'
+        // var newString=str.replace(reg,'a')
+        // console.log(newString)
+
+        // 扩展1
+        var str1='java love me'
+        var str2='I love java'
+
+        // ^代表字符是否为开头，$代表字符是否为结尾
+        var reg1=/^java/i
+        var reg2=/java$/
+        // var reg3=/^java$/ 所以只能是一个字符java
+        console.log(reg1.test(str1))
+        console.log(reg2.test(str2))    
+
+        // 效验用户名是否合法
+        /*
+        1.必须为字母开头
+        2.长度必须为6-10
+        3.后面其他字符随意
+        */
+    //    []代表一位，里面可以写条件
+    //    {}代表[]里面的规则可以重复多少位，{5,9}代表至少5次，最多九次
+        // var str='a2'
+        // var reg=/^[a-zA-Z][a-zA-Z0-9]{5,9}$/
+    // 其他的正则表达请参考文档
+        // 邮箱的正则表达式
+        // 2741490362@qq.com
+        // var reg=/^[a-zA-Z0-9_.-]+@([a-zA-Z0-9-]+[.]{1})+[a-zA-Z]+$/
+
+        //用户名 
+        // var reg=/^[a-zA-Z][a-zA-Z-0-9]{5,9}$/
+
+        // 密码
+        // var reg=/^[a-zA-Z0-9_.@#&*]{6,12}$/
+
+        // 前后空格
+        // var reg=/^/s+|\s+\S/g
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

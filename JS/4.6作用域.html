@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 如果变量在函数内没有声明（没有使用 var 关键字），该变量为全局变量。
+         以下实例中 carName 在函数内，但是为全局变量。 -->
+         <script>
+            // 调用carName变量
+            function myFunction(){
+                carName="vvv"
+            //此处调用
+            }
+         </script>
+        <!-- 在 HTML 中, 全局变量是 window 对象: 所有数据变量都属于 window 对象。 -->
+        <script>
+            // 调用window.carName变量
+            function myFunction(){
+                carName="vvv"
+            //此处调用
+            }
+        </script>
+</body>
+</html>

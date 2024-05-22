@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function myFunction(){
+            alert("hello");
+        }
+
+        function myFunction2( name,job){
+            alert("welcome"+name+",the"+job);
+        }
+        function myreturn(a,b){
+            if(a>b){
+                    return;
+            }
+            x=a+b;
+        }
+    </script>
+</head>
+<body>
+    <!-- 函数是由事件驱动的或者当它被调用时执行的可重复使用的代码块。 -->
+    <button onclick="myFunction()">try it</button>
+    <!-- 带有参数的函数
+            myfunction（argumt1,argumt2） 
+            声明函数使，把参数作为变量来声明
+            ....（var1,var2）{}
+
+        -->
+    <!-- 变量和参数必须以一致的顺序出现。
+         第一个变量就是第一个被传递的参数的给定的值，以此类推。 -->
+    <button onclick="myFunction2">try it</button>
+
+    <!-- 带有返回值的函数： 有时，我们会希望函数将值返回调用它的地方。
+         通过使用 return 语句就可以实现。
+         function myfunction(){
+            var x=5;
+            return x;
+         }
+         函数调用将被返回值取代：仅仅是当前函数会停止运行
+         同样那你也可以这样：
+            document.getELementId("").innerHTML=MYFYNCTION();
+        -->
+       <button id="demo" onclick="myreturn(3,5)">退出函数</button>
+       <!-- 局部变量和全局变量，懂得都懂，如果给未声明类型，将自动作为全局变量 -->
+
+
+</body>
+</html>

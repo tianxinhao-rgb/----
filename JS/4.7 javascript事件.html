@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- HTML事件: 
+                HTML 事件可以是浏览器行为，也可以是用户行为。
+                以下是 HTML 事件的实例：
+                HTML 页面完成加载
+                HTML input 字段改变时
+                HTML 按钮被点击
+                通常，当事件发生时，你可以做些事情。
+                在事件触发时 JavaScript 可以执行一些代码。
+                HTML 元素中可以添加事件属性，使用 JavaScript 代码来添加 HTML 元素。
+
+    -->
+    <p id="demo"></p>
+            <button onclick='document.getElementById("demo").innerHTML=Date()'></button>
+            <!-- 在下一个实例中，代码将修改自身元素的内容 (使用 this.innerHTML): -->
+            <button onclick="this.innerHTML=Date()">The time is?</button>
+</body>
+</html>
