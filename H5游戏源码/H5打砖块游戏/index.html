@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>打砖块游戏</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <canvas id="gameCanvas" width="480" height="320"></canvas>
+    <div id="score">得分: 0</div>
+    <div id="lives">生命: 3</div>
+    <div id="pauseOverlay" class="overlay">
+        <div class="overlay-content">
+            <div id="settingsTab" style="display: none;">
+                <h2>设置</h2>
+                <label for="speedSlider">球拍速度: <span id="speedValue">4</span></label>
+                <input type="range" id="speedSlider" min="1" max="20" value="4" class="slider">
+                <label for="ballSpeedSlider">球速度: <span id="ballSpeedValue">2</span></label>
+                <input type="range" id="ballSpeedSlider" min="1" max="10" value="2" class="slider">
+                <label for="volumeSlider">音效音量: <span id="volumeValue">1</span></label>
+                <input type="range" id="volumeSlider" min="0" max="1" step="0.1" value="1" class="slider">
+                <button class="btn" onclick="closeSettings()">返回</button>
+            </div>
+            <div id="pauseMenu">
+                <h2>游戏暂停</h2>
+                <button class="btn" onclick="showSettings()">设置</button>
+                <button class="btn" onclick="resumeGame()">继续游戏</button>
+            </div>
+        </div>
+    </div>
+    <div id="gameOverOverlay" class="overlay">
+        <div class="overlay-content">
+            <h2>游戏结束</h2>
+            <button class="btn" onclick="document.location.reload()">重新开始</button>
+        </div>
+    </div>
+    <div id="winOverlay" class="overlay">
+        <div class="overlay-content">
+            <h2>恭喜你，你赢了！</h2>
+            <button class="btn" onclick="document.location.reload()">再来一局</button>
+        </div>
+    </div>
+    <audio id="breakSound" src="sounds/break.mp3"></audio>
+    <audio id="winSound" src="sounds/win.mp3"></audio>
+    <audio id="loseSound" src="sounds/lose.mp3"></audio>
+    <script src="script.js"></script>
+</body>
+
+</html>

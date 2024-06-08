@@ -1,0 +1,110 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #000;
+    color: #fff;
+    /* 修改字体颜色为白色 */
+}
+
+canvas {
+    border: 1px solid #fff;
+}
+
+#score,
+#lives {
+    color: #fff;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+#pauseOverlay,
+#gameOverOverlay,
+#winOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay-content {
+    background-color: #fff;
+    color: #000;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    border: 2px solid #0095DD;
+    box-shadow: 0 0 10px #0095DD;
+    width: 300px;
+    /* 固定宽度 */
+}
+
+#speedSlider,
+#ballSpeedSlider,
+#volumeSlider {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.slider {
+    width: 100%;
+    height: 15px;
+    border-radius: 5px;
+    background: #0095DD;
+    outline: none;
+    opacity: 0.7;
+    transition: opacity .2s;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+}
+
+.btn {
+    background-color: #0095DD;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+    background-color: #007bb5;
+}
+
+.btn:active {
+    background-color: #005f87;
+    transform: scale(0.95);
+}
